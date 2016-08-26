@@ -2,7 +2,7 @@
 'use strict';
 const meow = require('meow');
 const getStdin = require('get-stdin');
-const fn = require('pretty-bytes');
+const prettyBytes = require('pretty-bytes');
 
 const cli = meow(`
 	Usage
@@ -17,7 +17,7 @@ const cli = meow(`
 const input = cli.input[0];
 
 function init(input) {
-	console.log(fn(Number(input)));
+	console.log(prettyBytes(Number(input)));
 }
 
 if (!input && process.stdin.isTTY) {
