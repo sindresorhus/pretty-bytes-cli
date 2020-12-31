@@ -1,4 +1,4 @@
-# pretty-bytes-cli [![Build Status](https://travis-ci.org/sindresorhus/pretty-bytes-cli.svg?branch=master)](https://travis-ci.org/sindresorhus/pretty-bytes-cli)
+# pretty-bytes-cli
 
 > Convert bytes to a human readable string: `1337` → `1.34 kB`
 
