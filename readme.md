@@ -4,13 +4,11 @@
 
 Useful for displaying file sizes for humans.
 
-
 ## Install
 
+```sh
+npm install --global pretty-bytes-cli
 ```
-$ npm install --global pretty-bytes-cli
-```
-
 
 ## Usage
 
@@ -26,12 +24,6 @@ $ pretty-bytes --help
     1.34 kB
 ```
 
-
 ## Related
 
 - [pretty-bytes](https://github.com/sindresorhus/pretty-bytes) - API for this module
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)

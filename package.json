@@ -1,52 +1,51 @@
 {
-  "name": "pretty-bytes-cli",
-  "version": "2.0.0",
-  "description": "Convert bytes to a human readable string: 1337 → 1.34 kB",
-  "license": "MIT",
-  "repository": "sindresorhus/pretty-bytes-cli",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "bin": {
-    "pretty-bytes": "cli.js"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "cli.js"
-  ],
-  "keywords": [
-    "cli-app",
-    "cli",
-    "pretty",
-    "bytes",
-    "byte",
-    "filesize",
-    "size",
-    "file",
-    "human",
-    "humanized",
-    "readable",
-    "si",
-    "data"
-  ],
-  "dependencies": {
-    "get-stdin": "^5.0.1",
-    "meow": "^3.6.0",
-    "pretty-bytes": "^4.0.0"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "execa": "^0.4.0",
-    "xo": "*"
-  },
-  "xo": {
-    "esnext": true
-  }
+	"name": "pretty-bytes-cli",
+	"version": "2.0.0",
+	"description": "Convert bytes to a human readable string: 1337 → 1.34 kB",
+	"license": "MIT",
+	"repository": "sindresorhus/pretty-bytes-cli",
+	"funding": "https://github.com/sponsors/sindresorhus",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "https://sindresorhus.com"
+	},
+	"type": "module",
+	"bin": {
+		"pretty-bytes": "./cli.js"
+	},
+	"engines": {
+		"node": "^14.18.0 || >=16.0.0"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"cli.js"
+	],
+	"keywords": [
+		"cli-app",
+		"cli",
+		"pretty",
+		"bytes",
+		"byte",
+		"filesize",
+		"size",
+		"file",
+		"human",
+		"humanized",
+		"readable",
+		"si",
+		"data"
+	],
+	"dependencies": {
+		"get-stdin": "^9.0.0",
+		"meow": "^10.1.2",
+		"pretty-bytes": "^6.0.0"
+	},
+	"devDependencies": {
+		"ava": "^4.0.1",
+		"execa": "^6.1.0",
+		"xo": "^0.48.0"
+	}
 }

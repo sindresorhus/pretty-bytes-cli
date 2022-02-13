@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-'use strict';
-const meow = require('meow');
-const getStdin = require('get-stdin');
-const prettyBytes = require('pretty-bytes');
+import process from 'node:process';
+import meow from 'meow';
+import getStdin from 'get-stdin';
+import prettyBytes from 'pretty-bytes';
 
 const cli = meow(`
 	Usage
@@ -12,7 +12,9 @@ const cli = meow(`
 	Example
 	  $ pretty-bytes 1337
 	  1.34 kB
-`);
+`, {
+	importMeta: import.meta,
+});
 
 const input = cli.input[0];
 
@@ -25,8 +27,4 @@ if (!input && process.stdin.isTTY) {
 	process.exit(1);
 }
 
-if (input) {
-	init(input);
-} else {
-	getStdin().then(init);
-}
+init(input ? input : await getStdin());
